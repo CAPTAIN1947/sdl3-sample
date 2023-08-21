@@ -37,7 +37,7 @@ jobs:
 
       - name: Add SDL
         run: |
-              rsync -Rr ./sdl3-sample/SDL ./sdl3-sample/SDL/android-project/app/jni/
+              rsync -Rr ./sdl3-sample/SDL/ ./sdl3-sample/SDL/android-project/app/jni/
               ls ./sdl3-sample/SDL/android-project/app/jni/
 
       - name: Build APK
