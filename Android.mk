@@ -7,7 +7,7 @@ LOCAL_MODULE := main
 SDL_PATH := ../SDL
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/include \
-					$(SDL_PATH)/include/SDL3
+		    $(LOCAL_PATH)/$(SDL_PATH)/include/SDL3
 
 
 # Add your application source files here...
