@@ -42,7 +42,7 @@ jobs:
       - name: Build APK
         run: |
               cd ./sdl3-sample/SDL/android-project/
-              ./gradlew installDebug
+              ./gradlew assembleDebug
               cd
 
       - name: Upload APK
