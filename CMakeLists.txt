@@ -10,4 +10,4 @@ target_include_directories(main PUBLIC ../SDL/include/SDL3 ../SDL/include)
 
 target_sources(main PUBLIC main.cpp)
 
-target_link_libraries(main SDL3)
+target_link_libraries(main PRIVATE SDL3::SDL3)
