@@ -36,7 +36,7 @@ jobs:
         run:  sed 's/# APP_STL := c++_shared/APP_STL := c++_shared/' ./sdl3-sample/SDL/android-project/app/jni/Application.mk
 
       - name: Add SDL
-        run: ln -s ./sdl3-sample/SDL ./sdl3-sample/SDL/android-project/app/jni/SDL
+        run: rsync -Rr ./sdl3-sample/SDL ./sdl3-sample/SDL/android-project/app/jni/
 
       - name: Build APK
         run: |
