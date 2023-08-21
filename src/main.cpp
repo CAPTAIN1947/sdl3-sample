@@ -4,7 +4,7 @@
 //On UWP, we need to not have SDL_main otherwise we'll get a linker error
 #define SDL_MAIN_HANDLED
 #endif
-#include <SDL_main.h>
+#include <SDL3/SDL_main.h>
 #if __EMSCRIPTEN__
 #include <emscripten.h>
 #endif
