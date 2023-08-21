@@ -1,5 +1,5 @@
 #include <iostream>
-#include <SDL.h>
+#include <SDL3/SDL.h>
 #if defined(WINAPI_FAMILY) && (WINAPI_FAMILY == WINAPI_FAMILY_APP)
 //On UWP, we need to not have SDL_main otherwise we'll get a linker error
 #define SDL_MAIN_HANDLED
