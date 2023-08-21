@@ -29,7 +29,7 @@ jobs:
               yes | sdkmanager --sdk_root=$ANDROID_HOME --licenses
       - name: Clone the project and prepare the build
         run: |
-              git clone https://github.com/Ravbug/sdl3-sample --depth=1 --recurse-submodules
+              git clone -b build-script https://github.com/captain1947/sdl3-sample --depth=1 --recurse-submodules
               ./sdl3-sample/SDL/build-scripts/androidbuild.sh org.libsdl.sdl3sample ./sdl3-sample/src/main.cpp
 
       - name: Build APK
