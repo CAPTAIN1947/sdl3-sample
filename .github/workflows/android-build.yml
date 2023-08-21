@@ -13,7 +13,7 @@ jobs:
       - name: Install dependencies
         run: |
               sudo apt update
-              sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common android-sdk
+              sudo apt install openjdk-8-jdk ant android-sdk-platform-tools-common android-sdk ninja-build
       - name: Setup Path
         run: |
               PATH="/usr/src/android-sdk/platform-tools:$PATH"
